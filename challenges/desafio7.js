@@ -1,14 +1,14 @@
 db.produtos.find({
-  "vendidos": {
+  vendidos: {
     $not: {
-      $eq: 50
-    }
+      $eq: 50,
+    },
   },
-  "tags": {
-    $exists: false
-  }
+  tags: {
+    $exists: false,
+  },
 }, {
-  "nome": true,
-  "vendidos": true,
-  "_id": false,
+  nome: true,
+  vendidos: true,
+  _id: false,
 });

@@ -1,10 +1,10 @@
 db.produtos.find({
-  "curtidas": {
+  curtidas: {
     $gt: 10,
-    $lt: 100
-  }
+    $lt: 100,
+  },
 }, {
-  "nome": true,
-  "curtidas": true,
-  "_id": false
-})
+  nome: true,
+  curtidas: true,
+  _id: false,
+});
